@@ -79,11 +79,11 @@
   background-color: rgb(9, 111, 201);
 }
 
-.profile-photo {
+.brief-intro-flex .profile-photo {
   padding-right: 30px;
 }
 
-.profile-photo img {
+.brief-intro-flex .profile-photo img {
   height: 400px;
   rotate: -5deg;
   border-radius: 50px;

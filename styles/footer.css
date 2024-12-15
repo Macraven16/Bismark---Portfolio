@@ -1,0 +1,49 @@
+.about-me-container {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.about-me-container .profile-photo {
+  
+}
+
+.about-me-container .profile-photo img {
+  width: 400px;
+  
+}
+
+.about-me-container .about-me {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me-container .about-me .heading{
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-me .essay {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  word-spacing: 8px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 60px;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 8px;
+}
+

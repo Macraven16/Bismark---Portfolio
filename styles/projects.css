@@ -8,19 +8,30 @@
   margin-top: 50px;
 }
 
-.projects-div-1 {
+.projects-div-1,
+.projects-div-2 {
   display: flex;
   justify-content: center;
   margin-top: 100px;
 }
 
 .photography-div {
-  width: 400px;
   margin-right: 50px;
+  margin-left: 50px;
+  flex: 1;
+  max-width: 500px;
 }
 
+.graphic-design-div {
+  margin-right: 50px;
+  flex: 1;
+  max-width: 500px;
+}
+
+/* titles */
 .photography-div .title,
-.graphic-design-div .title {
+.graphic-design-div .title,
+.ui-ux-div .title {
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -30,7 +41,9 @@
   margin-bottom: 15px;
 }
 
-.photography-div .outer-wrap {
+/* Outer container of images */
+.photography-div .outer-wrap,
+.graphic-design-div .outer-wrap {
   padding: 20px; 
 
   overflow: hidden; /*this is to prevent the images from overflowing outside the box */
@@ -38,15 +51,24 @@
 
 }
 
-.photography-div .images-div {
+.photography-div .images-div,
+.graphic-design-div .images-div {
   display: inline-flex; /*displays images horizontally */
-  
-  animation: scroll 5s linear infinite; /* animation set */
+
+  animation: scroll 10s linear infinite; /* animation set */
 }
 
-.photography-div .images-div img {
+.photography-div .images-div img,
+.graphic-design-div .images-div img {
   height: 250px;
   margin-right: 20px;
+  cursor: pointer;
+}
+
+.photography-div .images-div img:hover, 
+.graphic-design-div .images-div img:hover,
+.ui-ux-div .images-div img:hover {
+  scale: 1.5;
 }
 
 @keyframes scroll {
@@ -56,4 +78,34 @@
   100% {
     transform: translateX(-50%); /* Scroll entire content out */
   }
+}
+
+/* UI/UX design */
+.projects-div-2 {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.ui-ux-div {
+  max-width: 1000px;
+}
+
+/* Outer container of images */
+.ui-ux-div .outer-wrap {
+  padding: 20px; 
+
+  overflow: hidden; /*this is to prevent the images from overflowing outside the box */
+  box-shadow: 6px 4px 7px rgba(26, 2, 2, 0.5);
+}
+
+.ui-ux-div .images-div {
+  display: inline-flex; /*displays images horizontally */
+
+  animation: scroll 10s linear infinite; /* animation set */
+}
+
+.ui-ux-div .images-div img {
+  height: 250px;
+  margin-right: 20px;
+  cursor: pointer;
 }
