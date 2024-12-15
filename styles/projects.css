@@ -1,0 +1,59 @@
+.projects-text {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.projects-div-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.photography-div {
+  width: 400px;
+  margin-right: 50px;
+}
+
+.photography-div .title,
+.graphic-design-div .title {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.photography-div .outer-wrap {
+  padding: 20px; 
+
+  overflow: hidden; /*this is to prevent the images from overflowing outside the box */
+  box-shadow: 6px 4px 7px rgba(26, 2, 2, 0.5);
+
+}
+
+.photography-div .images-div {
+  display: inline-flex; /*displays images horizontally */
+  
+  animation: scroll 5s linear infinite; /* animation set */
+}
+
+.photography-div .images-div img {
+  height: 250px;
+  margin-right: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-50%); /* Scroll entire content out */
+  }
+}
