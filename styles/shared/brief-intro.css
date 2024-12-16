@@ -9,7 +9,7 @@
 }
 
 .brief-intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.839)), url(../images/background.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.839)), url(../../images/background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   /* filter: brightness(20%); */
@@ -35,7 +35,7 @@
   align-items: center;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .bio {
     padding-right: 100px;
   }
