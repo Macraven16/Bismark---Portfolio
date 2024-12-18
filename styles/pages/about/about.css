@@ -100,9 +100,10 @@
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  float: right;
   margin-top: 30px;
-  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
 }
 
 .linkdin,
