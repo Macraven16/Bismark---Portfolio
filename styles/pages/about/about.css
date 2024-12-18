@@ -90,3 +90,41 @@
   row-gap: 15px;
   color: rgb(40, 105, 72);
 }
+
+.icon {
+  font-size: 25px;
+}
+
+
+.social-accounts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.linkdin,
+.google,
+.instagram,
+.whatsapp {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.contact {
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 136, 255);
+}
+
+a:hover {
+  color: rgb(9, 111, 201);
+  text-decoration: underline;
+}
